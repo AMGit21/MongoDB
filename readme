@@ -1,6 +1,6 @@
 https://www.guru99.com/installation-configuration-mongodb.html
 
-# On mongo.exe: All of these code will be run in the MongoDB JavaScript command shell.
+#On mongo.exe: All of these code will be run in the MongoDB JavaScript command shell.
 # Import
 mongoimport --db TestDB --type csv --headerline --file data.csv
 mongoimport --db TestDB --type csv --headerline --file "C:\\ ... path ... \\data.csv"
