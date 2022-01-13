@@ -62,6 +62,3 @@ db.collection_name.update( {id:2}, { $set: {"name":"hussein","age":30} } );
 https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_encodeuricomponent
 
 
-#
-jjj
-
