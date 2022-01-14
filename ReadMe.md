@@ -15,7 +15,7 @@ mongod --config "C:/ ... path ... /mongod.conf"
 # Create a database using "use" command
 use testDB
 # Create a collection by insert
-# Add a new collections under the testDB database
+Add a new collections under the testDB database
 db.collection_name.insert({"id":1, "name":"ali", "age":15})
 db.new_collection_name.insert({"sub_id":1, "subject":"MongoDB", "grade":16})
 
@@ -35,14 +35,13 @@ db.collection_name.find()
 # MongoDB query examples
 db.collection_name.find({name : "ali"}).forEach(printjson); # Here we want to find for an Employee whose name is “ali” in the collection , hence we enter the filter criteria as EmployeeName : “ali”
 db.collection_name.find({age : {$gt:18}}).forEach(printjson); # Here we want to find for all Employee’s whose age is greater than 18. The $gt is called a query selection operator, and what is just means is to use the greater than expression.
-
 #
 var std_age = db.collection_name.find( { age : { $gt:2 } } );
 while(std_age.hasNext()) { print(tojson(std_age.next())); }
 # Code Explanation:
-# First we take the result set of the query which finds the students’s whose age is greater than 2 and assign it to the JavaScript variable ‘std-age’
-# Next we use the while loop to iterate through all of the documents which are returned as part of the query.
-# Finally for each document, we print the details of that document in JSON readable format.
+First we take the result set of the query which finds the students’s whose age is greater than 2 and assign it to the JavaScript variable ‘std-age’
+Next we use the while loop to iterate through all of the documents which are returned as part of the query.
+Finally for each document, we print the details of that document in JSON readable format.
 #
 # Sort() & Limit() Query 
 db.collection_name.find({age : {$gt:2}}).limit(2).forEach(printjson);
