@@ -9,14 +9,14 @@ const product1 = new productModel({
     Name: process.argv[2], // this is an example: process.argv[2] is the third element when I pass in the terminal "node .\app.js [product_name]"
     Description: 'lel8asil ma fi mosta7il',
     ExpireDate: '2023-08-09', // this is an example to access the data from another plac
-    Price: 15,
+    Price: 25,
 });
 const product2 = new productModel({
     ID: 2,
     Name: 'ma7arem',
     Description: 'lel8asil ma fi mosta7il',
     ExpireDate: '2024-12-09',
-    Price: '2',
+    Price: 10,
 });
 
 console.log(product1.Name, product1.Description, product1.ExpireDate, product1.Price);

@@ -20,7 +20,7 @@ const personSchema = new Schema({
     Age: {
         type: Number,
         min: [18, "Min age is 18 years"],
-        max: [65, "Max age is 65 years"],
+        max: 65,
     },
     Date: {
         type: Date,

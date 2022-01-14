@@ -6,11 +6,18 @@ const person1 = new personModel({
     Fname: 'Hadi',
     Lname: 'Makki',
     gender: "mal",
-    Age: 71,
+    Age: 11,
     Married: true,
 });
 const person2 = new personModel({
-    Fname: 'Mhmd',
+    Fname: 'Mhmd1',
+    Lname: 'Hadi',
+    Age: 19,
+    Date: new Date(),
+    Married: true,
+});
+const person3 = new personModel({
+    Fname: 'Mhmd2',
     Lname: 'Hadi',
     Age: 19,
     Date: new Date(),
@@ -18,6 +25,7 @@ const person2 = new personModel({
 });
 console.log(person1.Fname, person1.Lname, person1.Age);
 console.log(person2.Fname, person2.Lname, person2.Age);
+console.log(person3.Fname, person3.Lname, person3.Age);
 
 // 3m nma77e lcollections bas krmel ma ybayyin fi ktir data 3enna
 // 3melneha b async w await kirmel baddo yrou7 3l database layma77e fa fi natra 
@@ -29,16 +37,23 @@ drop_collection().then( // save the new person documents into the collection
     () => {
         person1.save().then(result => {
             console.log('Person 1 Added!')
-            mongoose.connection.close()
+                // mongoose.connection.close()
         }).catch((error) => {
             showErrors(error) // call function from ./showErrors.js
-            mongoose.connection.close()
+                // mongoose.connection.close()
         })
         person2.save().then(result => {
             console.log('Person 2 Added!')
-            mongoose.connection.close()
+                // mongoose.connection.close()
         }).catch((error) => {
             showErrors(error) // call function from ./showErrors.js
-            mongoose.connection.close()
+                // mongoose.connection.close()
+        })
+        person3.save().then(result => {
+            console.log('Person 3 Added!')
+                // mongoose.connection.close()
+        }).catch((error) => {
+            showErrors(error) // call function from ./showErrors.js
+                // mongoose.connection.close()
         })
     })
