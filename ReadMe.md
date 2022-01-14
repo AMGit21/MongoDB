@@ -63,4 +63,7 @@ https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_encodeuricomponent
 =======
 
 
+<<<<<<< HEAD:ReadMe.md
 >>>>>>> 7ed85c2b5c7fbcc9e3d7c52db1c32880bab45261:ReadMe.md
+=======
+>>>>>>> 7ed85c2b5c7fbcc9e3d7c52db1c32880bab45261:mongoDB.txt
