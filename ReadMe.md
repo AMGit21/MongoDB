@@ -59,3 +59,8 @@ db.collection_name.update( {id:2}, { $set: {"name":"hussein","age":30} } );
 
 # URI encoding to encode the password if it is containing a special caracter befor trying to connect to MongoDB
 https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_encodeuricomponent
+<<<<<<< HEAD:mongoDB.ReadMe.md
+=======
+
+
+>>>>>>> 7ed85c2b5c7fbcc9e3d7c52db1c32880bab45261:ReadMe.md
